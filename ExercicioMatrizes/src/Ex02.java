@@ -10,7 +10,6 @@ public class Ex02 {
             for (int j = 0; j < 5; j++){
                 System.out.print("Digite um valor: ");
                 m[i][j] = sc.nextInt();
-
                 if (m[i][j] % 2 !=0 ){
                     somaImpares += m[i][j];
                 }
@@ -31,6 +30,14 @@ public class Ex02 {
                 soma += m[i][j];
             }
             System.out.println("Soma da linha" + i + ":" + soma);
+        }
+        System.out.println("\nMatriz digitada:");
+
+        for (int i = 0; i < 5; i++){
+            for (int j = 0; j < 5; j++){
+                System.out.print(m[i][j] + " ");
+            }
+            System.out.println(); // quebra linha
         }
     }
 }
